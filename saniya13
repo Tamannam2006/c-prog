@@ -1,0 +1,11 @@
+#include<stdio.h>
+int userdetails()
+{
+    printf("king\n");
+    printf("queen\n");
+    printf("kingdom\n");
+}
+int main()
+{
+    userdetails();
+}
