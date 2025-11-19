@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main()
+{
+    int num=7;
+    int f=1;
+     long fact=1;
+    for (int i=1;i<=num;i++){
+        fact=fact*=i;
+    }
+    printf("factroial of %d=%d\n",num,fact);
+}
