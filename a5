@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+    int rows,colm;
+    printf(" enter the rows, column");
+    scanf("%d%d", &rows,&colm);
+    int a[rows][colm],b[rows][colm],c[rows][colm];
+    printf("enter the elements of a\n");
+    for(int i=0;i<rows;i++){
+        for(int j=0;j<colm;j++){
+            scanf("%d\n",a[i][j]);
+        }
+    }
+} 
