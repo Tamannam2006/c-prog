@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char cd[500];
+    char keyword[50];
+    printf("Enter the cd: ");
+    fgets(cd, sizeof(cd), stdin);
+    cd[strcspn(cd, "\n")] = '\0';
+    printf("Enter the keyword to search: ");
+    scanf("%s", keyword);
+    if (strstr(cd, keyword) != NULL) {
+        printf("Keyword '%s' found in the cd\n", keyword);
+    } else {
+        printf("Keyword '%s' not found in the cd\n", keyword);
+    }
+}
