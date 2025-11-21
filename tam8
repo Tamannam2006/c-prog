@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+
+// Define a structure
+struct Student {
+    char name[50];
+    int age;
+    float marks;
+};
+
+int main() {
+    // Create an array of 3 Students
+    struct Student students[3];
+
+    // Input data for each student
+    for(int i = 0; i < 3; i++) {
+        printf("Enter name of student %d: ", i + 1);
+        scanf("%s", students[i].name);
+        printf("Enter age of student %d: ", i + 1);
+        scanf("%d", &students[i].age);
+        printf("Enter marks of student %d: ", i + 1);
+        scanf("%f", &students[i].marks);
+    }
+
+    // Display student details
+    printf("\nStudent Details:\n");
+    for(int i = 0; i < 3; i++) {
+        printf("Name: %s, Age: %d, Marks: %.2f\n", 
+               students[i].name, students[i].age, students[i].marks);
+    }
+
+    return 0;
+}
