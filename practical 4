@@ -1,0 +1,21 @@
+#include<stdio.h>
+double sin_approx(double x, int terms) {
+    double result = x;      
+    double term = x;
+
+    for (int n = 1; n < terms; n++) {
+        term = -term * x * x / ((2 * n) * (2 * n + 1));
+        result += term;
+    }
+    return result;
+}
+int main() {
+    double angle;
+    int terms;
+    printf("Enter the angle in radians: ");
+    scanf("%lf", &angle);
+    printf("Enter number of terms for approximation: ");
+    scanf("%d", &terms);
+    double sinValue = sin_approx(angle, terms);
+    printf("Approximated sin(%.4lf) = %.6lf\n", angle, sinValue);
+}
