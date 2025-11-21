@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main() {
+    int inputID;
+    printf("Enter your unique ID (PAN, AADHAR, Driving License");
+    scanf("%d", &inputID);
+    if (inputID == 123456)
+    {
+        printf("The individual is verified.\n");
+    } 
+    else if (inputID == 987654)
+    {
+        printf("The individual is verified.\n");
+    } 
+    else if (inputID == 112233) 
+    {
+        printf("The individual is verified.\n");
+    } 
+    else if (inputID == 445566) 
+    {
+        printf("The individual is verified.\n");
+    } 
+    else if (inputID == 778899) {
+        printf("The individual is verified.\n");
+    } 
+    else {
+        printf("The individual is NOT verified.\n");
+    }
+}
