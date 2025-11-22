@@ -1,0 +1,12 @@
+#include <stdio.h>
+union Student {
+    int age;
+    float marks;
+};
+int main() {
+    union Student s;
+    s.age = 18;
+    printf("Age = %d\n", s.age);
+    s.marks = 85.5;
+    printf("Marks = %f\n", s.marks);
+}
