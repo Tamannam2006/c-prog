@@ -1,0 +1,12 @@
+#include <stdio.h>
+enum Months {
+    Jan = 1,
+    Feb = 5,
+    Mar = 10,
+    Apr = 15
+};
+int main() {
+    enum Months m;
+    m = Mar;
+    printf("Value of Mar = %d\n", m);
+}
